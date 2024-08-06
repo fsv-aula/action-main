@@ -8,9 +8,6 @@ on:
 
 jobs:
     teste-action-job:
-        permissions: 
-            issues: write
-            pull-requests: write
         runs-on: ubuntu-latest
         name: Execução de Custom Action
         steps:
