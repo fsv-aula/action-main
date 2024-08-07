@@ -12,7 +12,7 @@ jobs:
             issues: write
             pull-requests: write
         runs-on: ubuntu-latest
-        name: Execução de Custom Action (Javascript)
+        name: Execução de Custom Action (Composite)
         steps:
             - name: Adicionando Comentário
               id: comment_step
