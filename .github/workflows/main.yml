@@ -16,7 +16,7 @@ jobs:
         steps:
             - name: Adicionando Comentário
               id: comment_step
-              uses: fsv-aula/action-docker@v1.0.0
+              uses: fsv-aula/action-docker@065033c8518f8168d94833c3a0f6d568239fb074
               with:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                 issue-id: ${{ github.event.issue.number }}
