@@ -7,23 +7,23 @@ on:
         types: [opened]
 
 jobs:
-    teste-action-job-js:
-        permissions: 
-            issues: write
-            pull-requests: write
-        runs-on: ubuntu-latest
-        name: Execução de Custom Action (Javascript)
-        steps:
-            - name: Adicionando Comentário
-              id: comment_step
-              uses: fsv-aula/action-js@main
-              with:
-                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                issue-id: ${{ github.event.issue.number }}
-                comment: "Teste de comentário"
-            - name: Mostrar o ID do comentário
-              run: |
-                echo 'ID do comentário é: ${{ steps.comment_step.outputs.comment-id }}'
+    # teste-action-job-js:
+    #     permissions: 
+    #         issues: write
+    #         pull-requests: write
+    #     runs-on: ubuntu-latest
+    #     name: Execução de Custom Action (Javascript)
+    #     steps:
+    #         - name: Adicionando Comentário
+    #           id: comment_step
+    #           uses: fsv-aula/action-js@main
+    #           with:
+    #             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #             issue-id: ${{ github.event.issue.number }}
+    #             comment: "Teste de comentário"
+    #         - name: Mostrar o ID do comentário
+    #           run: |
+    #             echo 'ID do comentário é: ${{ steps.comment_step.outputs.comment-id }}'
     teste-action-job-composite:
         permissions: 
             issues: write
